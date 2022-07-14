@@ -25,10 +25,12 @@ namespace DailyReport
             string courseOn = Console.ReadLine();
 
             Console.WriteLine("What page number?");
-            string pageNumber = Console.ReadLine();
+            string pageNumberStr = Console.ReadLine();
+            int pageNumber = Convert.ToInt32(pageNumberStr);
 
             Console.WriteLine("Do you need help with anything? Please answer /“true/” or /“false./”");
-            string needHelp = Console.ReadLine();
+            string needHelpStr = Console.ReadLine();
+            bool needHelp = needHelpStr == "true";
 
             Console.WriteLine("Were there any positive experiences you’d like to share? Please give specifics.");
             string positiveExperiences = Console.ReadLine();
@@ -37,7 +39,8 @@ namespace DailyReport
             string otherFeedback = Console.ReadLine();
 
             Console.WriteLine("How many hours did you study today?");
-            string studyHours = Console.ReadLine();
+            string studyHoursStr = Console.ReadLine();
+            int studyHours = Convert.ToInt32(studyHoursStr);
 
             Console.WriteLine("Thank you for your answers. An Instructor will respond to this shortly. Have a great day!");
 
